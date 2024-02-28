@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;"">
+    <h1 style="text-align: center;">Innomatics Research Labs Task4</h1>
+    <form style="text-align: center;" action="/" method="post"> <br>
+        <input type="text" name="note" placeholder="Enter a note"> <br>
+        <button style="color: black;" onmouseover="this.style.color='green'">Add Note</button>
+    </form>
+
+    <ul>
+    {% for note in notes%}
+        <li style="color: cornsilk; margin-left: 50px;" onmouseover="this.style.color='green'" onmouseout="this.style.color='red'"
+    >{{ note }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
